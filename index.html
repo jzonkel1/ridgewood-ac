@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ridgewood Air Conditioning &amp; Heating, LLC — AC Repair &amp; Service | Ingleside &amp; Coastal Bend, TX</title>
+<meta name="description" content="Residential AC repair, replacement & maintenance across the Coastal Bend. 7 days a week, no overtime charges ever. Licensed TACLB112804C & insured. Call 361-608-9553.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#060b14;
+  --panel:#0c1524;
+  --panel-2:#111e33;
+  --line:rgba(148,180,220,.14);
+  --text:#e9f0f9;
+  --muted:#96a8bf;
+  --cool:#3aa7f0;
+  --cool-deep:#1e7fd1;
+  --warm:#ff7a2f;
+  --ember:#e8442e;
+  --gold:#f5b32f;
+  --spectrum:linear-gradient(90deg,#2e8fe0 0%,#3ec3d8 22%,#f5b32f 55%,#ff7a2f 78%,#e8442e 100%);
+  --radius:14px;
+  --wrap:1160px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Archivo',sans-serif;
+  background:var(--ink);
+  color:var(--text);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+h1,h2,h3,.disp{font-family:'Big Shoulders Display',sans-serif;text-transform:uppercase;letter-spacing:.015em;line-height:1.02}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--cool);
+}
+.eyebrow::before,.eyebrow::after{content:"";height:1px;width:28px;background:var(--spectrum);flex:none}
+@media(min-width:1024px){ .eyebrow.left::before{display:none} }
+.sec-head{margin-bottom:2.4rem;text-align:center}
+.sec-head h2{font-size:clamp(2.3rem,5.4vw,3.6rem);font-weight:800;margin-top:.55rem}
+.sec-head p{color:var(--muted);max-width:620px;margin:.7rem auto 0}
+section{padding:4.6rem 0}
+.icon{width:24px;height:24px;stroke-width:2}
+
+/* ---------- nav ---------- */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(6,11,20,.86);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+header::after{content:"";display:block;height:2px;background:var(--spectrum);opacity:.85}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nav-logo img{height:44px;width:auto}
+.nav-links{display:none;gap:1.9rem;font-size:.92rem;font-weight:600;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.nav-call{
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:linear-gradient(135deg,var(--warm),var(--ember));
+  color:#fff;font-weight:700;font-size:.95rem;
+  padding:.62rem 1.15rem;border-radius:999px;
+  box-shadow:0 6px 22px rgba(232,68,46,.35);
+  transition:transform .15s ease;
+  white-space:nowrap;
+}
+.nav-call:hover{transform:translateY(-1px)}
+.nav-call svg{width:17px;height:17px}
+@media(min-width:860px){ .nav-links{display:flex} }
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:0}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:72% 30%}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,11,20,.82) 0%,rgba(6,11,20,.66) 45%,rgba(6,11,20,.9) 100%);
+}
+@media(min-width:1024px){
+  .hero-bg img{object-position:65% 30%}
+  .hero-bg::after{
+    background:linear-gradient(90deg,rgba(6,11,20,.96) 0%,rgba(6,11,20,.88) 42%,rgba(6,11,20,.42) 75%,rgba(6,11,20,.55) 100%);
+  }
+}
+.hero-inner{
+  position:relative;z-index:1;
+  padding:5.4rem 0 5.6rem;
+  text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:1.3rem;
+}
+.hero h1{
+  font-size:clamp(3rem,9.5vw,5.6rem);
+  font-weight:800;
+  max-width:13ch;
+}
+.hero h1 .grad{
+  background:var(--spectrum);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-sub{color:#c3d1e2;max-width:34rem;font-size:1.06rem}
+.hero-sub strong{color:#fff}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:.4rem}
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-weight:700;font-size:1.02rem;
+  padding:.95rem 1.7rem;border-radius:999px;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn svg{width:19px;height:19px}
+.btn-fire{
+  background:linear-gradient(135deg,var(--warm),var(--ember));color:#fff;
+  box-shadow:0 8px 30px rgba(232,68,46,.38);
+}
+.btn-fire:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(232,68,46,.48)}
+.btn-ice{
+  border:1.5px solid rgba(88,167,240,.55);color:#cfe6fa;background:rgba(30,127,209,.12);
+}
+.btn-ice:hover{transform:translateY(-2px);background:rgba(30,127,209,.22)}
+.hero-trust{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1rem;margin-top:1.1rem;
+}
+.chip{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.86rem;font-weight:600;color:#d5e2f1;
+  background:rgba(12,21,36,.72);border:1px solid var(--line);
+  padding:.5rem .95rem;border-radius:999px;backdrop-filter:blur(6px);
+}
+.chip svg{width:15px;height:15px;color:var(--gold)}
+.chip .g{font-weight:800;color:#fff}
+@media(min-width:1024px){
+  .hero-inner{text-align:left;align-items:flex-start;padding:7.2rem 0 7.4rem;max-width:600px}
+  .hero-ctas,.hero-trust{justify-content:flex-start}
+}
+
+/* ---------- fee strip ---------- */
+.fee-strip{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:var(--panel);padding:1.35rem 0;
+}
+.fee-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;text-align:center}
+.fee-item .disp{font-size:1.9rem;font-weight:800}
+.fee-item .disp em{font-style:normal;background:var(--spectrum);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fee-item p{font-size:.86rem;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+@media(min-width:760px){ .fee-grid{grid-template-columns:repeat(3,1fr)} }
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.1rem}
+@media(min-width:640px){ .svc-grid{grid-template-columns:repeat(2,1fr)} }
+@media(min-width:1024px){ .svc-grid{grid-template-columns:repeat(3,1fr)} }
+.svc{
+  position:relative;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.7rem 1.5rem 1.6rem;overflow:hidden;
+  transition:transform .18s ease,border-color .18s ease;
+}
+.svc:hover{transform:translateY(-4px)}
+.svc::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;opacity:.9}
+.svc.cool::before{background:linear-gradient(90deg,var(--cool-deep),var(--cool))}
+.svc.warm::before{background:linear-gradient(90deg,var(--warm),var(--ember))}
+.svc.mix::before{background:var(--spectrum)}
+.svc:hover{border-color:rgba(148,180,220,.3)}
+.svc-ic{
+  width:48px;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;margin-bottom:1.05rem;
+}
+.svc.cool .svc-ic{background:rgba(58,167,240,.13);color:var(--cool)}
+.svc.warm .svc-ic{background:rgba(255,122,47,.13);color:var(--warm)}
+.svc.mix .svc-ic{background:rgba(245,179,47,.13);color:var(--gold)}
+.svc h3{font-size:1.45rem;font-weight:700;margin-bottom:.45rem}
+.svc p{font-size:.94rem;color:var(--muted)}
+
+/* ---------- club ---------- */
+.club{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.club::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--spectrum)}
+.club-grid{display:grid;grid-template-columns:1fr;gap:2.6rem;align-items:center}
+@media(min-width:1024px){ .club-grid{grid-template-columns:1.05fr .95fr} }
+.club-copy{text-align:center}
+.club-copy h2{font-size:clamp(2.3rem,5.4vw,3.4rem);font-weight:800;margin-top:.55rem}
+.club-copy>p{color:var(--muted);margin-top:.8rem;max-width:520px;margin-left:auto;margin-right:auto}
+.club-benefits{list-style:none;margin-top:1.5rem;display:grid;grid-template-columns:1fr;gap:.55rem;text-align:left;max-width:420px;margin-left:auto;margin-right:auto}
+@media(min-width:560px){ .club-benefits{grid-template-columns:1fr 1fr;max-width:none} }
+.club-benefits li{display:flex;gap:.6rem;align-items:flex-start;font-size:.95rem;color:#cdd9e8}
+.club-benefits svg{width:18px;height:18px;color:var(--cool);flex:none;margin-top:.22rem}
+@media(min-width:1024px){
+  .club-copy{text-align:left}
+  .club-copy>p{margin-left:0}
+  .club-benefits{margin-left:0}
+}
+.club-card{
+  background:var(--ink);border:1px solid var(--line);border-radius:18px;
+  padding:2rem 1.7rem;position:relative;overflow:hidden;
+}
+.club-card::before{content:"";position:absolute;inset:0;border-radius:18px;padding:1.5px;background:var(--spectrum);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.6}
+.club-price{display:flex;align-items:baseline;justify-content:center;gap:.4rem}
+.club-price .num{font-family:'Big Shoulders Display';font-size:4.6rem;font-weight:800;background:var(--spectrum);-webkit-background-clip:text;background-clip:text;color:transparent}
+.club-price .per{color:var(--muted);font-weight:600}
+.club-sub{text-align:center;color:var(--muted);font-size:.9rem;margin-top:.1rem}
+.seasons{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin:1.5rem 0 1.4rem}
+.season{border:1px solid var(--line);border-radius:12px;padding:1rem .9rem;text-align:center}
+.season svg{width:26px;height:26px;margin:0 auto .5rem}
+.season.spring svg{color:var(--cool)}
+.season.fall svg{color:var(--warm)}
+.season .disp{font-size:1.2rem;font-weight:700}
+.season p{font-size:.8rem;color:var(--muted)}
+.club-perks{list-style:none;font-size:.92rem;color:#cdd9e8;display:grid;gap:.45rem;margin-bottom:1.5rem}
+.club-perks li{display:flex;gap:.55rem;align-items:center}
+.club-perks svg{width:16px;height:16px;color:var(--gold);flex:none}
+.club-card .btn{width:100%;justify-content:center}
+
+/* ---------- reviews ---------- */
+.rev-hero{display:flex;flex-direction:column;align-items:center;gap:.4rem;margin-bottom:2.3rem}
+.rev-hero .score{font-family:'Big Shoulders Display';font-size:5.2rem;font-weight:800;line-height:1}
+.stars{display:flex;gap:.25rem;color:var(--gold)}
+.stars svg{width:22px;height:22px;fill:var(--gold);stroke:var(--gold)}
+.rev-hero p{color:var(--muted);font-size:.95rem}
+.rev-hero p strong{color:var(--text)}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:1.1rem}
+@media(min-width:860px){ .rev-grid{grid-template-columns:repeat(3,1fr)} }
+.rev{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.6rem 1.5rem;display:flex;flex-direction:column;gap:.9rem;
+}
+.rev svg.q{width:26px;height:26px;color:var(--cool);opacity:.7}
+.rev p{font-size:.95rem;color:#cdd9e8;flex:1}
+.rev-by{display:flex;align-items:center;gap:.7rem}
+.rev-av{
+  width:38px;height:38px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:.95rem;color:#fff;
+}
+.rev-by .nm{font-weight:600;font-size:.92rem}
+.rev-by .src{font-size:.78rem;color:var(--muted)}
+.rev-note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:1.6rem}
+.rev-note a{color:var(--cool);font-weight:600}
+
+/* ---------- gallery ---------- */
+.gal{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+@media(min-width:860px){ .gal-grid{grid-template-columns:repeat(3,1fr)} }
+.gal-item{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+.gal-item:hover img{transform:scale(1.04)}
+.gal-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:1.6rem .85rem .7rem;font-size:.8rem;font-weight:600;color:#e6edf6;
+  background:linear-gradient(180deg,transparent,rgba(6,11,20,.88));
+}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:1fr;gap:2.4rem;align-items:center}
+@media(min-width:960px){ .about-grid{grid-template-columns:.9fr 1.1fr} }
+.about-photo{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);max-width:440px;margin:0 auto}
+.about-photo::after{content:"";position:absolute;inset:0;box-shadow:inset 0 -70px 60px -30px rgba(6,11,20,.55)}
+.about-copy{text-align:center}
+.about-copy h2{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:800;margin-top:.55rem}
+.about-copy p{color:var(--muted);margin-top:.9rem}
+.about-copy p strong{color:var(--text)}
+.about-badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem;justify-content:center}
+@media(min-width:960px){
+  .about-copy{text-align:left}
+  .about-badges{justify-content:flex-start}
+}
+
+/* ---------- booking ---------- */
+.book-frame{
+  background:var(--panel);border:1px solid var(--line);border-radius:18px;
+  overflow:hidden;position:relative;
+}
+.book-frame::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--spectrum);z-index:2}
+.book-bar{
+  display:flex;align-items:center;gap:.6rem;
+  padding:.9rem 1.2rem;border-bottom:1px solid var(--line);
+  font-size:.88rem;color:var(--muted);
+}
+.book-bar .dots{display:flex;gap:.35rem}
+.book-bar .dots span{width:9px;height:9px;border-radius:50%;background:var(--panel-2);border:1px solid var(--line)}
+.book-frame iframe{width:100%;height:820px;border:0;display:block;background:#fff}
+.book-alt{text-align:center;color:var(--muted);font-size:.92rem;margin-top:1.3rem}
+.book-alt a{color:var(--cool);font-weight:600}
+
+/* ---------- area ---------- */
+.area{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.area-grid{display:grid;grid-template-columns:1fr;gap:1.8rem;align-items:stretch}
+@media(min-width:960px){ .area-grid{grid-template-columns:1.1fr .9fr} }
+.area-map{border-radius:16px;overflow:hidden;border:1px solid var(--line);min-height:340px;filter:saturate(.92)}
+.area-map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.towns{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.2rem}
+.town{
+  font-size:.86rem;font-weight:600;color:#cdd9e8;
+  border:1px solid var(--line);border-radius:999px;padding:.42rem .85rem;
+  display:inline-flex;align-items:center;gap:.4rem;
+}
+.town svg{width:13px;height:13px;color:var(--cool)}
+.area-side h3{font-size:1.9rem;font-weight:800;margin-bottom:.6rem}
+.area-side p{color:var(--muted);font-size:.95rem}
+.sa-card{
+  margin-top:1.4rem;background:var(--ink);border:1px solid var(--line);
+  border-radius:14px;padding:1.3rem 1.3rem;
+}
+.sa-card .disp{font-size:1.35rem;font-weight:700}
+.sa-card p{font-size:.9rem;margin:.3rem 0 .8rem}
+.sa-card a{color:var(--warm);font-weight:700;display:inline-flex;align-items:center;gap:.45rem}
+.sa-card a svg{width:16px;height:16px}
+
+/* ---------- footer ---------- */
+footer{padding:3.4rem 0 7.5rem;border-top:1px solid transparent;position:relative}
+footer::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--spectrum);opacity:.7}
+.foot-grid{display:flex;flex-direction:column;align-items:center;gap:1.4rem;text-align:center}
+.foot-grid img{height:52px;width:auto}
+.foot-phones{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:center;font-weight:700;font-size:1.05rem}
+.foot-phones span{color:var(--muted);font-weight:500;font-size:.85rem;display:block}
+.foot-meta{color:var(--muted);font-size:.85rem;max-width:520px}
+.foot-social{display:flex;gap:1rem}
+.foot-social a{
+  width:40px;height:40px;border-radius:50%;border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;color:var(--muted);
+  transition:color .15s,border-color .15s;
+}
+.foot-social a:hover{color:#fff;border-color:rgba(148,180,220,.4)}
+.foot-social svg{width:17px;height:17px;fill:currentColor}
+@media(min-width:860px){ footer{padding-bottom:3.4rem} }
+
+/* ---------- sticky mobile bar ---------- */
+.callbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;
+  display:grid;grid-template-columns:1fr 1fr 1fr;
+  background:rgba(6,11,20,.94);backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+}
+.callbar a{
+  display:flex;flex-direction:column;align-items:center;gap:.18rem;
+  padding:.65rem 0 .8rem;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:#cdd9e8;
+}
+.callbar svg{width:20px;height:20px}
+.callbar .c-call{color:#fff;background:linear-gradient(135deg,var(--warm),var(--ember))}
+.callbar .c-text svg{color:var(--cool)}
+.callbar .c-book svg{color:var(--gold)}
+@media(min-width:860px){ .callbar{display:none} }
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="nav-logo" href="#top" aria-label="Ridgewood Air Conditioning & Heating">
+      <img src="ridgewood-logo.png" alt="Ridgewood Air Conditioning & Heating LLC">
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#club">Club Membership</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#work">Our Work</a>
+      <a href="#book">Book Online</a>
+    </nav>
+    <a class="nav-call" href="tel:3616089553">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+      361-608-9553
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"><img src="hero-thomas-wide.jpg" alt="" fetchpriority="high"></div>
+    <div class="wrap">
+      <div class="hero-inner">
+        <span class="eyebrow">Licensed TACLB112804C &amp; Insured</span>
+        <h1>Keep your cool, <span class="grad">Coastal Bend.</span></h1>
+        <p class="hero-sub">Residential AC repair, replacement &amp; maintenance from Ingleside to Port Aransas — <strong>7 days a week, no overtime charges ever.</strong> Call or text and a live dispatcher picks up.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-fire" href="tel:3616089553">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            Call 361-608-9553
+          </a>
+          <a class="btn btn-ice" href="#book">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+            Book Online
+          </a>
+        </div>
+        <div class="hero-trust">
+          <span class="chip">
+            <svg viewBox="0 0 24 24"><path fill="#f5b32f" d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <span class="g">5.0</span>&nbsp;on Google · 37 reviews
+          </span>
+          <span class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            Licensed &amp; Insured
+          </span>
+          <span class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Open 7 Days a Week
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEE STRIP -->
+  <div class="fee-strip">
+    <div class="wrap fee-grid">
+      <div class="fee-item"><div class="disp"><em>$95</em> Service Fee</div><p>7 days a week · no overtime charges ever</p></div>
+      <div class="fee-item"><div class="disp"><em>5.0★</em> Google Rating</div><p>37 five-star reviews &amp; counting</p></div>
+      <div class="fee-item"><div class="disp"><em>100%</em> Residential</div><p>Homes are all we do — and we do them right</p></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Every degree, handled</h2>
+        <p>From emergency repairs in the peak of summer to the checkup that keeps the emergency from ever happening.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc cool reveal">
+          <div class="svc-ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 20-1.25-2.5L6 18"/><path d="M10 4 8.75 6.5 6 6"/><path d="m14 20 1.25-2.5L18 18"/><path d="m14 4 1.25 2.5L18 6"/><path d="m17 21-3-6h-4"/><path d="m17 3-3 6 1.5 3"/><path d="M2 12h6.5L10 9"/><path d="m20 10-1.5 2 1.5 2"/><path d="M22 12h-6.5L14 15"/><path d="m4 10 1.5 2L4 14"/><path d="m7 21 3-6-1.5-3"/><path d="m7 3 3 6h4"/></svg></div>
+          <h3>AC Repair</h3>
+          <p>Warm air, frozen coils, breaker tripping when the AC kicks on — we diagnose the real cause and fix it, not just the symptom.</p>
+        </div>
+        <div class="svc cool reveal">
+          <div class="svc-ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z"/><path d="M12 12v.01"/></svg></div>
+          <h3>AC Replacement &amp; Install</h3>
+          <p>Time for that upgrade you've been thinking about? Honest proposals with real options — customers tell us our prices beat the other estimates.</p>
+        </div>
+        <div class="svc warm reveal">
+          <div class="svc-ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/></svg></div>
+          <h3>Heating Repair</h3>
+          <p>When the cold snap hits, we show up fast. We've even loaned a customer a space heater while their part was on order.</p>
+        </div>
+        <div class="svc mix reveal">
+          <div class="svc-ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
+          <h3>Seasonal Tune-Ups</h3>
+          <p>Complete spring and fall checkups that catch small problems before they become August breakdowns. The backbone of our Club Membership.</p>
+        </div>
+        <div class="svc cool reveal">
+          <div class="svc-ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 17.5a2.5 2.5 0 1 1-4 2.03V12"/><path d="M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 8h12"/><path d="M6.6 15.572A2 2 0 1 0 10 17v-5"/></svg></div>
+          <h3>Ductwork &amp; Air Quality</h3>
+          <p>Duct replacement and cleaning that gets every room the airflow it's supposed to have — and keeps the dust out of your lungs.</p>
+        </div>
+        <div class="svc warm reveal">
+          <div class="svc-ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></div>
+          <h3>Advanced Diagnostics</h3>
+          <p>Thermal imaging cameras and live digital system testing — we show you exactly what your system is doing, not just tell you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLUB -->
+  <section class="club" id="club">
+    <div class="wrap club-grid">
+      <div class="club-copy reveal">
+        <span class="eyebrow">Club Membership</span>
+        <h2>Two seasons.<br>Zero surprises.</h2>
+        <p>Checkups are the backbone of how we keep Coastal Bend homes comfortable. Twice a year — spring and fall — our service specialist performs a complete, thorough checkup so your system runs efficiently when you need it most.</p>
+        <ul class="club-benefits">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Spring &amp; fall checkups included</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Scheduled service reminders</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Maintenance documentation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Diagnosis of problems &amp; issues</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>10% off prices</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Priority service when it counts</li>
+        </ul>
+      </div>
+      <div class="club-card reveal">
+        <div class="club-price"><span class="num">$135</span><span class="per">/ year</span></div>
+        <p class="club-sub">$15 each additional HVAC system</p>
+        <div class="seasons">
+          <div class="season spring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 20-1.25-2.5L6 18"/><path d="M10 4 8.75 6.5 6 6"/><path d="M10.585 15H10"/><path d="M2 12h6.5L10 9"/><path d="M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z"/><path d="m4 10 1.5 2L4 14"/><path d="m7 21 3-6-1.5-3"/><path d="m7 3 3 6h2"/></svg>
+            <div class="disp">Spring</div>
+            <p>Cooling checkup before the Texas summer hits</p>
+          </div>
+          <div class="season fall">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="M12 8a4 4 0 0 0-1.645 7.647"/><path d="M2 12h2"/><path d="M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z"/><path d="m4.93 4.93 1.41 1.41"/><path d="m6.34 17.66-1.41 1.41"/></svg>
+            <div class="disp">Fall</div>
+            <p>Heating checkup before the first cold front</p>
+          </div>
+        </div>
+        <ul class="club-perks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg><strong>$0 service fee</strong>&nbsp;for members between visits</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>Non-members pay $95 per visit — the club pays for itself</li>
+        </ul>
+        <a class="btn btn-fire" href="#book">Join the Club — Book a Checkup</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Word around town</span>
+        <h2>5.0 stars. Not an accident.</h2>
+      </div>
+      <div class="rev-hero reveal">
+        <div class="score">5.0</div>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        </div>
+        <p><strong>37 Google reviews</strong> · every single one five stars</p>
+      </div>
+      <div class="rev-grid">
+        <div class="rev reveal">
+          <svg class="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+          <p>"Tommy checked everything and then explained what was needed and why. We had to replace the old unit but his price was way lower than other estimates I had gotten. I would highly recommend Ridgewood."</p>
+          <div class="rev-by">
+            <span class="rev-av" style="background:linear-gradient(135deg,#2e8fe0,#3ec3d8)">V</span>
+            <div><div class="nm">Veronica Endsley</div><div class="src">★★★★★ · Google review</div></div>
+          </div>
+        </div>
+        <div class="rev reveal">
+          <svg class="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+          <p>"I called for an A/C check up, and a live person answered the phone right away. We scheduled same day. The technician was on time, clean and polite. I will have them back every six months."</p>
+          <div class="rev-by">
+            <span class="rev-av" style="background:linear-gradient(135deg,#f5b32f,#ff7a2f)">D</span>
+            <div><div class="nm">Doug Thompson</div><div class="src">★★★★★ · Google review</div></div>
+          </div>
+        </div>
+        <div class="rev reveal">
+          <svg class="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+          <p>"Fast response, great communication, minimal downtime and affordable repairs — truly exceeded expectations. Highly recommend for reliable, professional service. You saved our day!"</p>
+          <div class="rev-by">
+            <span class="rev-av" style="background:linear-gradient(135deg,#ff7a2f,#e8442e)">I</span>
+            <div><div class="nm">Ingleside Kennels</div><div class="src">★★★★★ · Google review</div></div>
+          </div>
+        </div>
+      </div>
+      <p class="rev-note">Read all 37 reviews on <a href="https://www.google.com/maps/place/Ridgewood+Air+Conditioning+%26+Heating,+LLC/@27.8780399,-97.2004591,17z" target="_blank" rel="noopener">Google</a> — or the 6 recommendations on <a href="https://www.facebook.com/RidgewoodAC/" target="_blank" rel="noopener">Facebook</a>.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gal" id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Proof, not promises</span>
+        <h2>Real jobs. Documented.</h2>
+        <p>Every checkup and repair comes with real readings and real photos — so you see what we see.</p>
+      </div>
+      <div class="gal-grid">
+        <figure class="gal-item reveal"><img src="work-flir.jpg" alt="Thermal imaging diagnostic with FLIR camera" loading="lazy"><figcaption>Thermal-imaging diagnostics</figcaption></figure>
+        <figure class="gal-item reveal"><img src="work-systemtest.jpg" alt="Live digital AC system test" loading="lazy"><figcaption>Live digital system testing</figcaption></figure>
+        <figure class="gal-item reveal"><img src="work-ductwork.jpg" alt="New flex ductwork staged for install" loading="lazy"><figcaption>Fresh ductwork, ready to install</figcaption></figure>
+        <figure class="gal-item reveal"><img src="work-coil-rust.jpg" alt="Corroded evaporator coil found during inspection" loading="lazy"><figcaption>What a checkup catches early</figcaption></figure>
+        <figure class="gal-item reveal"><img src="work-negair.jpg" alt="Duct cleaning equipment on the job" loading="lazy"><figcaption>Duct cleaning day (with supervision)</figcaption></figure>
+        <figure class="gal-item reveal"><img src="work-grille.jpg" alt="Technician testing a return grille" loading="lazy"><figcaption>Airflow testing at the return</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-photo reveal"><img src="owner-thomas-portrait.jpg" alt="Thomas Martinez, founder of Ridgewood Air Conditioning & Heating"></div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">The man behind the swirl</span>
+        <h2>Meet Thomas Martinez</h2>
+        <p>Founder of Ridgewood Air Conditioning &amp; Heating and the reason customers say things like <strong>"Thomas is an ace HVAC mechanic"</strong> and <strong>"high tech with a high bar for integrity."</strong> When a customer's heat went out during a cold snap and the part had to be ordered, Thomas brought them a room heater to use until it arrived. That's the standard.</p>
+        <p>Call during business hours and you won't get a robot — <strong>our lead dispatcher picks up, gets you scheduled, and keeps you posted.</strong></p>
+        <div class="about-badges">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>TACLB112804C</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>Fully Insured</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>Live Dispatcher</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Skip the phone tag</span>
+        <h2>Book your visit online</h2>
+        <p>Pick a time that works and you'll get an email confirmation. Booking for later than 3 hours out? You're set. Need something sooner — call or text us.</p>
+      </div>
+      <div class="book-frame reveal">
+        <div class="book-bar"><span class="dots"><span></span><span></span><span></span></span>portal.fieldpulse.com/ridgewoodbooking — live scheduling</div>
+        <iframe src="https://portal.fieldpulse.com/ridgewoodbooking" title="Ridgewood online booking" loading="lazy"></iframe>
+      </div>
+      <p class="book-alt">Prefer a human? Call or text <a href="tel:3616089553">361-608-9553</a> — our lead dispatcher will gladly assist.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="area" id="area">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Where we roll</span>
+        <h2>Serving the Coastal Bend</h2>
+      </div>
+      <div class="area-grid">
+        <div class="area-map reveal">
+          <iframe src="https://maps.google.com/maps?q=2230%20State%20Highway%20361%2C%20Ingleside%2C%20TX%2078362&t=&z=9&ie=UTF8&iwloc=&output=embed" title="Ridgewood AC service area map" loading="lazy"></iframe>
+        </div>
+        <div class="area-side reveal">
+          <h3>Based in Ingleside, at home everywhere</h3>
+          <p>From the island to the ranch country — if you're in one of these towns, you're in our backyard.</p>
+          <div class="towns">
+            <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Ingleside</span>
+            <span class="town">Portland</span><span class="town">Aransas Pass</span><span class="town">Rockport</span><span class="town">Port Aransas</span><span class="town">Corpus Christi</span><span class="town">North Beach</span><span class="town">Gregory</span><span class="town">Taft</span><span class="town">Sinton</span><span class="town">Lamar</span><span class="town">London</span><span class="town">Beeville</span>
+          </div>
+          <div class="sa-card">
+            <div class="disp">Also in San Antonio</div>
+            <p>Yes — Ridgewood serves San Antonio too, with its own dedicated line.</p>
+            <a href="tel:2109153222"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>210-915-3222</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <img src="ridgewood-logo.png" alt="Ridgewood Air Conditioning & Heating LLC">
+    <div class="foot-phones">
+      <a href="tel:3616089553">361-608-9553<span>Coastal Bend</span></a>
+      <a href="tel:2109153222">210-915-3222<span>San Antonio</span></a>
+    </div>
+    <p class="foot-meta">Ridgewood Air Conditioning &amp; Heating, LLC · Residential HVAC · Ingleside, TX<br>License TACLB112804C · Insured · Open 7 days a week</p>
+    <div class="foot-social">
+      <a href="https://www.facebook.com/RidgewoodAC/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+      <a href="https://www.instagram.com/ridgewoodhvac/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE BAR -->
+<nav class="callbar" aria-label="Quick contact">
+  <a class="c-call" href="tel:3616089553">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+    Call Now
+  </a>
+  <a class="c-text" href="sms:3616089553">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>
+    Text Us
+  </a>
+  <a class="c-book" href="#book">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+    Book
+  </a>
+</nav>
+
+<script>
+const io = new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
